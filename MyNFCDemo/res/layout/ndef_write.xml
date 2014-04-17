@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	>
+
+	<ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" 
+		 android:id="@+id/ivBanner_read" />
+
+	<RadioGroup android:layout_width="fill_parent"
+		 android:layout_height="wrap_content" android:layout_marginTop = "50dp"
+		android:orientation="horizontal" android:id="@+id/RadioGroup1">
+		<RadioButton android:checked="true" android:id="@+id/option1"
+			android:layout_weight="1" android:text="TEXT" android:textColor="#FFFFFFFF"
+			android:textStyle="bold" android:gravity="center" android:background="#FF565656" />
+		<RadioButton android:checked="false" android:id="@+id/option2"
+			android:layout_weight="1" android:text="URL" android:textColor="#FFFFFFFF"
+			android:textStyle="bold" android:background="#FF565656"
+			android:gravity="center" />
+	</RadioGroup>
+
+	<EditText android:layout_marginTop = "110dp" android:gravity="top"
+		android:layout_width="fill_parent" android:background ="#DDFFFFFF"
+		android:layout_height="wrap_content" android:id="@+id/etNdefWrite"
+		android:imeOptions="actionDone" 
+		android:textColor="#000000" 
+		android:lines = "6" 
+		/>
+		
+	
+	<RelativeLayout android:id="@+id/lyNdefWrite" android:orientation="horizontal" 
+		android:layout_below="@+id/etNdefWrite" android:layout_marginTop = "10dp"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	
+	
+	<Button android:id="@+id/ndefClearEdit" android:layout_weight="1"
+		android:layout_width="wrap_content"  android:layout_height="wrap_content"
+		android:text="清除"
+		android:layout_marginLeft = "10dp"/>
+	
+	<Button android:id="@+id/ndefWriteEdit" android:layout_weight="1" 
+		android:layout_height="wrap_content" android:layout_width="wrap_content"  android:text="确定" 
+		 android:layout_marginLeft = "170dp"/>
+	
+	</RelativeLayout>
+	
+	
+</RelativeLayout>

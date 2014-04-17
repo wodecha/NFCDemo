@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_weight="50"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text" >
+
+        <TextView
+            android:id="@+id/promt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:textSize="30dp"
+            android:textColor="#000000" 
+            android:text="请将手机靠近要读取的NFC标签" />
+    </ScrollView>
+    
+    
+    <Button android:id="@+id/NFCWriteButton"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:text="写入"
+        	android:layout_marginTop="20dp"
+        	android:layout_gravity="center_horizontal"
+        	android:visibility="invisible"/>
+
+</LinearLayout>
